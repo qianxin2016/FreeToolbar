@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolbar.xinxin.com.toolbaractivitydemo.widget.FreeToolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:freetoolbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/colorBackground"
+    freetoolbar:menu_width="@dimen/toolbar_menu_width"
+    freetoolbar:menu_height="@dimen/toolbar_menu_height"
+    freetoolbar:menu_offset_x="@dimen/toolbar_menu_offest_x"
+    freetoolbar:menu_offset_y="@dimen/toolbar_menu_offest_y"
+    freetoolbar:title_padding_when_no_navi_icon="@dimen/toolbar_title_padding_when_no_navi_icon">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/toolbar_navi"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="16.5dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/back_arrow"
+                android:layout_gravity="center"
+                android:clickable="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/toolbar_text_size"
+        android:textColor="#FFFFFF"
+        android:paddingTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/toolbar_menu"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:paddingLeft="21.5dp">
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/menu"
+                android:clickable="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</toolbar.xinxin.com.toolbaractivitydemo.widget.FreeToolbar>

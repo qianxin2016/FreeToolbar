@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FreeToolbar">
+        <attr name="menu_offset_x" format="dimension" />
+        <attr name="menu_offset_y" format="dimension" />
+        <attr name="menu_width" format="dimension" />
+        <attr name="menu_height" format="dimension" />
+        <attr name="title_padding_when_no_navi_icon" format="dimension" />
+    </declare-styleable>
+</resources>
